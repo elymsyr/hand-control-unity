@@ -8,6 +8,7 @@ public class HandTrackerr : MonoBehaviour
 
     public UDPReceive udpReceive;
     public GameObject[] handPoints;
+    string data;
 
     void Start()
     {
@@ -17,6 +18,9 @@ public class HandTrackerr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        data = udpReceive.data;
+        data = data.Remove(0,1);
+        data = data.Remove(data.Length-1,1);
+        print(data);
     }
 }
