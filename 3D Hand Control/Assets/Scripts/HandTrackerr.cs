@@ -31,6 +31,9 @@ public class HandTrackerr : MonoBehaviour
             float z = float.Parse(points[i * 3 + 2]) / 100;
 
             handPoints[i].transform.localPosition = new Vector3(x, y, z);
+            if(i == 1 || i == 2){
+                print(i + " - " + handPoints[i].transform.localPosition);
+            }
         }
     }
 }
