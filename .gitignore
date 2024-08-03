@@ -3,7 +3,7 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 
-/3D Hand Control/
+# /3D Hand Control/
 /3D Hand Control/Library/
 /3D Hand Control/Logs/
 /3D Hand Control/Packages/
