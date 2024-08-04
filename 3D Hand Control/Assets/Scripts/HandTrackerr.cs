@@ -16,13 +16,12 @@ public class HandTrackerr : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         data = udpReceive.data;
         data = data.Remove(0,1);
         data = data.Remove(data.Length-1,1);
-        // print(data);
+    //     print(data);
         string[] points = data.Split(',');
         for ( int i = 0 ; i < 21 ; i++)
         {
